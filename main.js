@@ -1,52 +1,47 @@
-$("body").quietflow({
-    theme : "bouncingBalls",
-    specificColors : [
-      "rgb(0,152,118)",
-      "rgb(255,32,82)", 
-      "rgb(0,168,231)", 
-      "aqua"
-    ]
-  });
-
-
-//   Audio Section
-// Audio------------
+// Audio Section
 var myAudio = document.getElementById("myAudio");
 var myAudioEng = document.getElementById("myAudioEng");
 var isPlaying = false;
 
 function togglePlay() {
   if (isPlaying) {
-    myAudio.pause()
+    myAudio.pause();
   } else {
     myAudio.play();
   }
-};
-myAudio.onplaying = function() {
-  isPlaying = true;
-};
-myAudio.onpause = function() {
-  isPlaying = false;
+  isPlaying = !isPlaying;
 };
 
 function togglePlayEng() {
   if (isPlaying) {
-    myAudioEng.pause()
+    myAudioEng.pause();
   } else {
     myAudioEng.play();
   }
+  isPlaying = !isPlaying;
 };
 
-myAudioEng.onplaying = function() {
+myAudio.addEventListener("play", function() {
   isPlaying = true;
-};
-myAudioEng.onpause = function() {
-  isPlaying = false;
-};
-
-
-$('.sound div').click(function(){
-    $(this).find('i').toggleClass('fa-music fa-pause')
 });
 
-  
+myAudio.addEventListener("pause", function() {
+  isPlaying = false;
+});
+
+myAudioEng.addEventListener("play", function() {
+  isPlaying = true;
+});
+
+myAudioEng.addEventListener("pause", function() {
+  isPlaying = false;
+});
+
+$('.sound div').click(function(){
+  $(this).find('i').toggleClass('fa-music fa-pause');
+  if ($(this).hasClass('hindi')) {
+    togglePlay();
+  } else {
+    togglePlayEng();
+  }
+});
