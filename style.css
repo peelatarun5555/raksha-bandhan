@@ -20,7 +20,7 @@ html, body {
 }
 header h1{
     color: rgba(13, 19, 1, 0);
-    background-image: url(../image/color5.jpg);
+    background-image: url(color5.jpg);
     background-repeat: repeat;
     -webkit-background-clip: text;
     animation: animate 15s linear infinite;
@@ -67,7 +67,7 @@ header h3{
 .container{
     width: 250px;
     height: 350px;
-    background: url(../image/rak.jpg) center center no-repeat; 
+    background: url(rak.jpg) center center no-repeat; 
     background-size: cover;
     position: absolute;
     left: 50%;
@@ -120,20 +120,20 @@ header h3{
 }
 
 .front{
-    background: url(../image/bunting-flag.png) center no-repeat;
+    background: url(bunting-flag.png) center no-repeat;
     background-size: cover;
 }
 .front2{
-    background: url(../image/bunting-flag.png) center no-repeat;
+    background: url(bunting-flag.png) center no-repeat;
     background-size: cover;
 }
 .back{
-    background: url(../image/rak1.jpg) center center no-repeat;
+    background: url(rak1.jpg) center center no-repeat;
     background-size: cover;
     transform: rotateY(180deg);
 }
 .back2{
-    background: url(../image/rak2.jpg) center center no-repeat;
+    background: url(rak2.jpg) center center no-repeat;
     background-size: cover;
     transform: rotateY(-180deg);
 }
