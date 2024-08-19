@@ -67,7 +67,7 @@ header h3{
 .container{
     width: 250px;
     height: 350px;
-    background: url(Pic3.mp4) center center no-repeat; 
+    background: url(Pic1.mp4) center center no-repeat; 
     background-size: cover;
     position: absolute;
     left: 50%;
@@ -128,12 +128,12 @@ header h3{
     background-size: cover;
 }
 .back{
-    background: url(rak1.jpg) center center no-repeat;
+    background: url(Pic4.jpg) center center no-repeat;
     background-size: cover;
     transform: rotateY(180deg);
 }
 .back2{
-    background: url(rak2.jpg) center center no-repeat;
+    background: url(Pic5.jpg) center center no-repeat;
     background-size: cover;
     transform: rotateY(-180deg);
 }
